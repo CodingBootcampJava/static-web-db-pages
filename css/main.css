@@ -1,0 +1,17 @@
+.list-group > .list-group-item {
+  color: black;
+  font-size: large;
+  border-radius: 0;
+  border-width: 1px 0 0 0;
+}
+
+.list-group > .list-group > .list-group-item > .far {
+  font-weight: bolder;
+  padding-left: 2%;
+}
+
+.list-group > .list-group > .list-group > .list-group-item {
+  font-style: italic;
+  font-weight: normal, lighter;
+  padding-left: 7%;
+}

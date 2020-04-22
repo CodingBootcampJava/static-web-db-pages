@@ -1,0 +1,36 @@
+html,
+body {
+  font-family: sans-serif;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  text-shadow: 1px 1px rgb(239, 241, 77);
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  opacity: 1;
+}
+
+.band {
+  padding: 10px;
+  margin-bottom: 0;
+  background-color: rgba(199, 21, 133, 0.7);
+  font-family: "Ink Free";
+  font-weight: bold;
+  font-size: larger;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+footer {
+  font-size: xx-small;
+  text-align: right;
+}
+
+body {
+  background: rgb(255, 246, 255);
+}

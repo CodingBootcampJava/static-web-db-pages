@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Update an Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- external css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/crcEdit.css" rel="stylesheet" type="text/css">
+    <!-- external js -->
+    <script src="js/crsEdit.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid  band">
+            <div class="container-fluid text-center">
+                <h1 class="title">Private School Structure</h1>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand"><img src="logo.png" alt="logo" style="width:40px; margin-right: 10%;">Database</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="crs_main.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trn_main.html">Trainers</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="std_main.html">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="ass_main.html">Assignments</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-user" aria-hidden="true">
+                            Login</i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-sign-out-alt" aria-hidden="true">
+                            Exit</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container mt-5">
+            <form class="form-horizontal">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-">
+                        <h2>Update an Assignment</h2>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col" style="text-align: right;">
+                        <label for="name">Title</label>
+                    </div>
+                    <div class="col-9">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem"><i class="fas fa-heading"></i>
+                                </div>
+                                <input type="text" name="title" class="form-control" id="title" placeholder="CB8"
+                                    required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="text-align: right;">
+                        <label for="stream">Description</label>
+                    </div>
+                    <div class="col-9">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem"><i class="fas fa-stream"></i></div>
+                                <input type="text" name="description" class="form-control" id="description" placeholder="description"
+                                    required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="text-align: right;">
+                        <label for="password">Subscription Date</label>
+                    </div>
+                    <div class="col-9">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <input type="date" name="subDate" id="subDate" class="form-control" required>
+                                <input type="time" name="subTime" id="subTime" class="form-control" value="23:59">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="text-align: right;">
+                        <label for="password">Oral Mark</label>
+                    </div>
+                    <div class="col-9">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fas fa-sort-numeric-down-alt"></i>
+                                </div>
+                                <input type="number" name="oralMark" id="oralMark" class="form-control" min="0.0" max="0.2" step="0.01" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="text-align: right;">
+                        <label for="password">Total Mark</label>
+                    </div>
+                    <div class="col-9">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fas fa-sort-numeric-down-alt"></i>
+                                </div>
+                                <input type="number" name="totalMark" id="totalMark" class="form-control" min="0.0" max="1.0" step="0.01" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <button type="reset" class="btn btn-w3r"><i class="far fa-trash-alt"></i> Clear</button>
+                    </div>
+                    <div class="col-">
+                        <button type="submit" class="btn btn-w3r"><i class="far fa-edit"></i> Confirm</button>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="mt-5">
+        <hr>
+        <div class="container">
+            <p>Created by: Grats&reg;</p>
+            <p>Contact information: <a href="mailto:gr.kalfakakou@gmail.com">gr.kalfakakou@gmail.com</a>.</p>
+            <p class="lastUpdate">Last update: <i>15/01/2020</i></p>
+        </div>
+    </footer>
+</body>
+
+</html>
